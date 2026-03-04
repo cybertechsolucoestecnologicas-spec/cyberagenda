@@ -91,7 +91,12 @@ app.post("/webhook", async (req, res) => {
 app.get("/", (req, res) => {
   res.send("CyberAgenda rodando 🚀")
 })
-
+// ================================
+// ROTA TESTE WEBHOOK
+// ================================
+app.get("/webhook", (req, res) => {
+  res.send("Webhook ativo ✅")
+})
 // ================================
 // INICIAR SERVIDOR
 // ================================
