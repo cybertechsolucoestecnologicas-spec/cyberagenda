@@ -85,27 +85,18 @@ app.post("/webhook", async (req, res) => {
     res.sendStatus(500)
   }
 })
-
 // ================================
-// IMPORTAÇÕES
+// ROTA TESTE
 // ================================
-const express = require("express");
-const app = express();
-
-// ================================
-// ROTAS
-// ================================
-
 app.get("/", (req, res) => {
-  res.send("CyberAgenda está online 🚀");
-});
+  res.send("CyberAgenda rodando 🚀")
+})
 
 // ================================
 // INICIAR SERVIDOR
 // ================================
-
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000
 
 app.listen(PORT, () => {
-  console.log(`Servidor rodando na porta ${PORT}`);
-});
+  console.log("Servidor rodando na porta " + PORT)
+})
